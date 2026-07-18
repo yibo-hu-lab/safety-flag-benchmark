@@ -107,22 +107,38 @@ column (Llama, OLMo) means they are not.}
 \end{table}
 """)
 
-# ---------- Figure 1: teaser scatter FA vs Miss ----------
-plt.rcParams.update({"font.size": 11, "font.family": "serif"})
-fig, ax = plt.subplots(figsize=(4.2, 3.6))
-colors = plt.cm.tab10(np.linspace(0, 1, len(MODELS)))
-for m, col in zip(MODELS, colors):
-    fa = [C(m, d)["fa"] for d in DATASETS if C(m, d)]
-    ms = [C(m, d)["miss"] for d in DATASETS if C(m, d)]
-    ax.scatter(fa, ms, color=col, s=28, alpha=0.55, edgecolors="none")
-    ax.scatter(np.mean(fa), np.mean(ms), color=col, s=150, marker="*",
-               edgecolors="k", linewidths=0.6, label=m, zorder=5)
-ax.plot([0, 1], [0, 1], ls=":", c="gray", lw=0.8)
-ax.set_xlabel("False-alarm rate  (over-caution)")
-ax.set_ylabel("Miss rate  (under-caution)")
-ax.set_xlim(-0.02, 1.0); ax.set_ylim(-0.02, 0.65)
-ax.legend(fontsize=7, loc="upper right", framealpha=0.9)
-ax.set_title("Each model occupies a different error regime", fontsize=9.5)
+# ---------- Figure 1: over-caution-gap dot plot ----------
+plt.rcParams.update({"font.size": 10, "font.family": "serif"})
+DISP = {"Mistral-7B": "Mistral-7B", "Llama-3.1-8B": "Llama-3.1-8B",
+        "Qwen2.5-7B": "Qwen2.5-7B", "Qwen2.5-32B": "Qwen2.5-32B",
+        "gemma-2-9b": "Gemma-2-9B", "OLMo-2-7B": "OLMo-2-7B"}
+grows = []
+for m in MODELS:
+    gaps = [C(m, d)["fa"] - C(m, d)["miss"] for d in DATASETS if C(m, d)]
+    grows.append((m, float(np.mean(gaps)), gaps))
+grows.sort(key=lambda x: x[1])   # under-flaggers at bottom, over-flaggers at top
+fig, ax = plt.subplots(figsize=(4.7, 3.0))
+ax.axvspan(-0.6, 0, color="#4C72B0", alpha=0.06)
+ax.axvspan(0, 1.1, color="#C44E52", alpha=0.06)
+for i, (m, mean, gaps) in enumerate(grows):
+    lo, hi = min(gaps), max(gaps)
+    ax.hlines(i, lo, hi, color="0.6", lw=1.3, zorder=2)                     # per-benchmark range
+    ax.scatter([lo, hi], [i, i], marker="|", s=45, color="0.6", zorder=2)   # end caps
+    ax.scatter([mean], [i], s=95, marker="D", color="k", zorder=3)          # mean
+    ax.annotate(f"{mean:+.2f}", (mean, i), textcoords="offset points",
+                xytext=(0, 9), ha="center", fontsize=7.5)
+ax.axvline(0, ls="--", c="0.4", lw=1)
+ax.set_yticks(range(len(grows)))
+ax.set_yticklabels([DISP[m] for m, _, _ in grows])
+ax.set_xlabel(r"Over-caution gap   (false-alarm $-$ miss rate)")
+ax.set_xlim(-0.58, 1.02)
+ax.set_ylim(-0.7, len(grows) - 0.3)
+ax.text(-0.56, len(grows) - 0.55, "under-flags\n(misses harmful)", ha="left", va="top",
+        fontsize=7.5, color="#2f4b7c")
+ax.text(1.0, 1.5, "over-flags\n(flags benign)", ha="right", va="center",
+        fontsize=7.5, color="#8c3336")
+for s in ("top", "right"):
+    ax.spines[s].set_visible(False)
 fig.tight_layout()
 fig.savefig(os.path.join(FIG, "fig_landscape.pdf"))
 plt.close(fig)
