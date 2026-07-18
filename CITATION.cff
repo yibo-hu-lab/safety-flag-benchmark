@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: >-
+  Safety-Flag: A Unified Benchmark for the Reliability and
+  Calibration of LLM Content Moderators
+message: >-
+  If you use this resource, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Yibo
+    family-names: Hu
+    affiliation: Illinois Institute of Technology
+    email: yhu89@illinoistech.edu
+repository-code: 'https://github.com/yibo-hu-lab/safety-flag-benchmark'
+abstract: >-
+  Safety-Flag recasts six widely used safety benchmarks
+  (BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat)
+  into one balanced binary flag/do-not-flag protocol and
+  releases a reliability and calibration leaderboard for ten
+  open content moderators, scored on identical items with
+  per-item confidence outputs. Only derived artifacts (item
+  IDs, harmonized labels, and model outputs) are released;
+  no source text is redistributed.
+keywords:
+  - content moderation
+  - large language models
+  - calibration
+  - selective prediction
+  - benchmark
+  - trustworthy AI
+license: CC-BY-4.0
+version: 1.0.0
+date-released: '2026-07-26'
