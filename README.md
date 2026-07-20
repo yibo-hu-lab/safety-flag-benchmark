@@ -91,5 +91,7 @@ data/results/
 
 ## Citation
 
-If you use Safety-Flag, please cite the paper (see `CITATION.cff`, added on release).
-A permanent archival DOI (e.g. Zenodo) may be added for a citable snapshot.
+If you use Safety-Flag, please cite the paper (see `CITATION.cff`). The resource is archived on
+Zenodo under the concept DOI [10.5281/zenodo.21429763](https://doi.org/10.5281/zenodo.21429763),
+which always resolves to the latest version. See [`DATASHEET.md`](DATASHEET.md) for full dataset
+documentation (composition, collection, label validation, uses, distribution, maintenance).

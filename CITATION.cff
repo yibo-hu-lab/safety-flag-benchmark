@@ -12,6 +12,10 @@ authors:
     affiliation: Illinois Institute of Technology
     email: yhu89@illinoistech.edu
 repository-code: 'https://github.com/yibo-hu-lab/safety-flag-benchmark'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21429763
+    description: Concept DOI (resolves to the latest version)
 abstract: >-
   Safety-Flag recasts six widely used safety benchmarks
   (BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat)
