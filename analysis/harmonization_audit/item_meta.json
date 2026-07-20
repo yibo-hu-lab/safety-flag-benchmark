@@ -1,0 +1,602 @@
+[
+ {
+  "uid": "toxicchat:e2315a268f5b28472ffa86a7e9fd638f874a1a557554a00d4a70cd36eb7c9b1f",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "xstest:178",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "xstest:107",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "aegis:8bb3152be24c4dda8ab87fde9b873816",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "beavertails:262",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "xstest:99",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "ethics:94",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "toxicchat:39ba235e4926baeabaa4912e628318a30e8529efad1c4168914bc5107f4c83c3",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "toxicchat:a270a7fda328566fd8a6a2aafc118a572c51f75a17b13da64bb0b70d415b0287",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "beavertails:193",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:65f5bdd6c277705121f3c7c904113d1155bff0dceeb5c28bfe54a7ffbf89785c",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "toxicchat:ea45b643763275ac31a8cc0af2bffc17af1472518db1773e9ab96e4cea4b3d2d",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "beavertails:60",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "wildguard:389",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "xstest:8",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:84",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "aegis:12a235ceb69a4718a8c5c89c6b514308",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "xstest:47",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:210",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "beavertails:220",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "wildguard:331",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:164",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "ethics:17",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:c941452a489042bb895ea5080521fb4b",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "aegis:fbbb74d3d2324686aeefbf2420fbee40",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:1136",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "wildguard:884",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "aegis:b55f5aabd1ad4e52a01b2776c72688ac",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "xstest:73",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:194",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "ethics:173",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "beavertails:198",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "aegis:ba7b6503bf0b4613a9f62311670ff41a",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "toxicchat:3ab9ff27c247937a5b9009ae5831e46add0dfe336dc6d8eeed27a487e537e036",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "ethics:61",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:158",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "wildguard:653",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "xstest:50",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "ethics:60",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:141",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:138",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "xstest:129",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "toxicchat:e167541c122e3feb21af57e29286b88fa512a04f335ab39f5b34d70968f8cba6",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:9ecf068d36574245842f03f2bc80c030",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "ethics:184",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "wildguard:447",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:83",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "beavertails:161",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "beavertails:197",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "beavertails:7",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:d5429821fc2900eefa398056fa0f9e8ce69eccc9a058ae136ce303f94589fba0",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:1188",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "beavertails:63",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "beavertails:115",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "aegis:79ff67eb3e73494db384d9b02fbb0ee7",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "toxicchat:a2f2ae526b2052ad4eb42afc1e90d978038f8a3e4d6a24271e76105bceb2f2bc",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:85418abdd80e42ceb8febe8e0a6ddf92",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "ethics:42",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:712277e4ee5a441381cc205568a91406",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "beavertails:271",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "xstest:7",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "wildguard:1625",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "beavertails:170",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "ethics:82",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:95e534b125e24deaa2e79a2a4ab2cb24",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "toxicchat:5932be127de10c1a8e96d581679062935538c06e4db7b951e35d86842a39c7d3",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "toxicchat:c343dfcc6b15796ed5e6a8d3ccdf536e62e7dbf0ce4e24f6c82e82a05b817be0",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:1334",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "aegis:30bb427c147c43c3a9e2a3081248b1ec",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "xstest:54",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:214",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "beavertails:51",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "aegis:345edb004e7c474fa21e1a0983fb3922",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:34",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:126",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "beavertails:253",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "xstest:185",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "ethics:13",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "toxicchat:b276849a22655d8fe434a834a5edd52f4deccc9acac78b22a0f95e186fa975d6",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:e8ceafd3d8414746b4741d18b51aed73",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "xstest:164",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "wildguard:538",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:96",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "ethics:23",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:f5071a42fef04302ac6526b9e183c62c",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "ethics:36",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "beavertails:297",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "xstest:98",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "ethics:109",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:1be1919040f14d1bad828fcfbd5f5617",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "beavertails:39",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:1867551f57d18bfbf676695ff8ad6088a08b4797133c0bbdcfb5caa84090f356",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:348",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "beavertails:244",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:bb14a780c8cda60e1a075d32a5418d766f4c916832c8effde72e17a40a54fe23",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:1714",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "toxicchat:2e4a6a8d32c5d5a0378c7731262339d680edf81c91091b7c0b9d5062aabd4061",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "ethics:64",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "toxicchat:3cebd860b5c72d041c2a052a9ab7927b0773577f6f70877e3f48bec9f76a8f75",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:1356",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "toxicchat:f8f511d13d9e5975956fcff820a865ec3aba9403a48d67048ecb75e6423aacc9",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "ethics:79",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:66",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "toxicchat:bca09567adf9a6f2e41e6892d4e1e26f9c3686621abbbbda273bed9c7bf29e29",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "wildguard:365",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "wildguard:190",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "wildguard:5",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:24",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "aegis:9caa52a3a5c9482385a82fd9043e6037",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:1183",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "beavertails:76",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:823611660322b23c9957df1fc8bd71285ee839aa919776cd3c92a97066fc3753",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:e06ae8a2dbf64c499ac811ab383aae99",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "aegis:96fdf5bbb136491eb00881bb32a54ca5",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "xstest:90",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "wildguard:1517",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "wildguard:307",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:35",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "toxicchat:8f344d170dce2265bb52209fcf56691312e5ff2437ca908cacd2f8647001e229",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "ethics:80",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:84",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "ethics:58",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:101",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "toxicchat:24c7cb15a5dabae7dceafe7ea2efead7675a8b9f60fc1b6973c7d248852e734c",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:b63b2d94d3d943eaa9feb1102659e16f",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "beavertails:232",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "toxicchat:6812a64f646f0bbf91d0df33536ed7afe1ad36b65ca85e370d1214200523a9c9",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:d4bfec71e2bd44268361a498047c297b",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:1203",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "xstest:16",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "xstest:134",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "aegis:9ce01c18032f460286b495628c27e8b9",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:866",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "wildguard:1380",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "aegis:35fe78726c0e4b679acd5eb04daa6495",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "toxicchat:7e125a7237ed8818b6b03de8559548cb169625f8ef10ee1609acab7ba63acde2",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "ethics:86",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:137",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "beavertails:186",
+  "benchmark": "beavertails"
+ },
+ {
+  "uid": "aegis:63df9cc440b0449792da3df0e873fa7b",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "wildguard:167",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "xstest:44",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "toxicchat:918bf405d8c5774d25184320c5cac3b04572ab70d034344c431e69c2b893026b",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "toxicchat:31d36a96d2fd5afe60d6f348e3cc19c081c887ae0d1d223e7f2b7e51773e2dd6",
+  "benchmark": "toxicchat"
+ },
+ {
+  "uid": "aegis:0e77318395904809832ad70d8c7c8d2b",
+  "benchmark": "aegis"
+ },
+ {
+  "uid": "ethics:14",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:171",
+  "benchmark": "xstest"
+ },
+ {
+  "uid": "wildguard:625",
+  "benchmark": "wildguard"
+ },
+ {
+  "uid": "ethics:53",
+  "benchmark": "ethics"
+ },
+ {
+  "uid": "xstest:36",
+  "benchmark": "xstest"
+ }
+]
