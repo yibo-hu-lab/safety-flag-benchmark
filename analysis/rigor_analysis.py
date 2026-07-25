@@ -39,9 +39,9 @@ PAPER = os.path.dirname(OUT)
 TAB = os.path.join(PAPER, "tables")
 
 MODELS = ["Mistral-7B", "Llama-3.1-8B", "Qwen2.5-7B", "Qwen2.5-32B", "gemma-2-9b", "OLMo-2-7B"]
-DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat"]
+DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat", "toxigen"]
 DISP = {"beavertails": "BeaverTails", "xstest": "XSTest", "ethics": "Ethics",
-        "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat"}
+        "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat", "toxigen": "ToxiGen"}
 # Table display order = ranked by macro-F1 (matches make_exp_tables.py)
 DISP_ORDER = ["Qwen2.5-32B", "gemma-2-9b", "Qwen2.5-7B", "Mistral-7B", "OLMo-2-7B", "Llama-3.1-8B"]
 

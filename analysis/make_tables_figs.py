@@ -14,9 +14,9 @@ R = json.load(open(os.path.join(OUT, "results.json")))
 cells, agg = R["cells"], R["model_agg"]
 
 MODELS = ["Mistral-7B", "Llama-3.1-8B", "Qwen2.5-7B", "Qwen2.5-32B", "gemma-2-9b", "OLMo-2-7B"]
-DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat"]
+DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat", "toxigen"]
 DISP = {"beavertails": "BeaverTails", "xstest": "XSTest", "ethics": "Ethics",
-        "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat"}
+        "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat", "toxigen": "ToxiGen"}
 def C(m, d): return cells.get(f"{m}|{d}")
 
 order = sorted(MODELS, key=lambda m: -agg[m]["macro_f1"])
@@ -26,7 +26,7 @@ with open(os.path.join(TAB, "tab_leaderboard.tex"), "w") as f:
     f.write(r"""\begin{table}[t]
 \centering
 \caption{\textbf{Reliability \& calibration leaderboard} for six open-weight LLMs as
-binary content-moderation flaggers, macro-averaged over the six benchmarks
+binary content-moderation flaggers, macro-averaged over the seven benchmarks
 (identical item sets; \S\ref{sec:bench}). \emph{FA} = false-alarm rate (benign content
 flagged; over-caution); \emph{Miss} = harmful content not flagged (under-caution);
 \emph{ECE} on logprob confidence; \emph{AURC} = area under the coverage--risk curve

@@ -16,7 +16,7 @@ from build_leaderboard import cell_metrics, load_solo, MODELS
 
 GUARD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "results", "guard-results")
 GUARDS = ["llamaguard3", "wildguard", "shieldgemma", "aegis"]
-GBENCH = ["xstest", "wildguard", "aegis", "toxicchat", "beavertails"]
+GBENCH = ["xstest", "wildguard", "aegis", "toxicchat", "beavertails", "toxigen"]
 INDIST = {("wildguard", "wildguard"), ("aegis", "aegis")}  # guard trained on that data
 
 

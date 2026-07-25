@@ -1,7 +1,7 @@
 # Safety-Flag
 
-A unified evaluation resource that recasts six widely used safety benchmarks
-(BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat) into a single balanced
+A unified evaluation resource that recasts seven widely used safety benchmarks
+(BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat, ToxiGen) into a single balanced
 binary **flag / do-not-flag** protocol, and scores ten open moderators (six
 general-purpose LLMs and four dedicated guard models), plus frontier and
 reasoning reference models, on identical items under one standardized
@@ -31,7 +31,7 @@ original repository under that source's own license (see **Provenance** below).
 
 ## Provenance and source licenses
 
-Each item traces back to one of six public benchmarks; the raw text remains under
+Each item traces back to one of seven public benchmarks; the raw text remains under
 each source's original license, and must be obtained from the source:
 
 | Benchmark | Source |
@@ -42,6 +42,7 @@ each source's original license, and must be obtained from the source:
 | WildGuard | allenai/wildguardmix |
 | Aegis | nvidia/Aegis-AI-Content-Safety-Dataset-2.0 |
 | ToxiChat | ToxiChat (Baheti et al., 2021) |
+| ToxiGen | microsoft/ToxiGen |
 
 ## The standardized prompt
 
@@ -73,7 +74,7 @@ the paper's results.)
 analysis/    reproduction scripts (read data/results/, emit tables + figures)
 data/results/
   *.jsonl                 base benchmarks (BeaverTails, XSTest, Ethics)
-  moderation_ext/         WildGuard, Aegis, ToxiChat
+  moderation_ext/         WildGuard, Aegis, ToxiChat, ToxiGen
   frontier/               Qwen2.5-32B (indicative scale point)
   guard-results/          four dedicated guard models
   prompt-robust/          label-swap / paraphrase robustness cells

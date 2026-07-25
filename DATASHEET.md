@@ -8,7 +8,7 @@ prompt, and per-item model outputs); it redistributes no source-benchmark text.
 
 **For what purpose was the dataset created?**
 To evaluate LLM content moderators on *operational reliability* rather than accuracy alone. It
-recasts six widely used safety benchmarks into one balanced binary flag / do-not-flag protocol and
+recasts seven widely used safety benchmarks into one balanced binary flag / do-not-flag protocol and
 records, per item, each model's verdict and two confidence signals, so a moderator can be audited on
 three separable axes: error direction (over- vs. under-flagging), probability calibration, and
 selective ranking (coverage–risk abstention).
@@ -25,7 +25,7 @@ verbalized (1–10, rescaled to [0,1]) confidence. Instances are grouped per mod
 `data/results/` as JSONL. **No prompt or benchmark text is included.**
 
 **How many instances are there?**
-The evaluation suite is ≈1,200 items (198–200 class-balanced items per benchmark × 6 benchmarks;
+The evaluation suite is ≈1,400 items (198–200 class-balanced items per benchmark × 7 benchmarks;
 each benchmark's item set is the intersection of IDs present for every model). Every item is scored
 by 10 moderators (6 general-purpose LLMs + 4 dedicated guards) plus 3 reference models
 (gpt-4.1-mini, gpt-5.4-mini, R1-Distill-Llama-8B), yielding the per-item output files. Additional
@@ -36,11 +36,12 @@ Yes: a binary **flag / do-not-flag** label. The label is **not a fresh annotatio
 its source benchmark's own released label, mapped deterministically to flag / do-not-flag by
 a fixed rule per benchmark (BeaverTails: any harm category present; XSTest: unsafe-contrast prompt;
 Ethics: immoral action; WildGuard: harmful prompt; Aegis: unsafe interaction; ToxiChat: toxic
-content). The full mapping is in the paper (Table 1) and the released loaders.
+content; ToxiGen: human toxicity score ≥ 4 of 5). The full mapping is in the paper and the released
+loaders.
 
 **Is any information missing?**
 gpt-5.4-mini is a reasoning model whose API hides option-token logprobs, so its logprob-based ECE
-and AURC are absent (verdict and verbalized confidence are present). Two of ≈7,600 items failed
+and AURC are absent (verdict and verbalized confidence are present). Two of 8,388 outputs failed
 JSON parsing (<0.03%).
 
 **Are there errors, noise, or redundancies?**
@@ -52,7 +53,7 @@ Label noise is inherited from the sources. It is highest on Aegis (see label val
 Model outputs were produced by running each moderator through one shared inference harness on the
 identical item set, under one standardized flag-plus-confidence prompt (see `README.md`). Verdicts
 are decoded greedily. Guards are scored through their native safety interfaces and mapped to the flag
-decision. Source item IDs and native labels come from the six public benchmarks.
+decision. Source item IDs and native labels come from the seven public benchmarks.
 
 **Over what timeframe was the data collected?**
 Model outputs were generated in 2026 for the accompanying paper. Model identifiers are recorded in
@@ -66,12 +67,14 @@ mapped to the binary flag label by the fixed rule above. The evaluation set per 
 intersection of item IDs present for every model.
 
 **How was the label harmonization validated?**
-By **two independent LLM judges from different vendors** — `gpt-5.5` and `claude-opus-4-8`, neither
+By **two cross-vendor LLM judges** — `gpt-5.5` and `claude-opus-4-8`, neither
 among the evaluated systems. Each was shown only the item content under the released flag policy,
-blind to the mapped gold, and re-labeled the same 150-item balanced sample (25 per benchmark). Both
-agree with the mapped gold (gpt-5.5 Cohen's κ = 0.89; Claude κ = 0.87) and agree with each other more
-strongly still (judge-vs-judge κ = 0.92). Disagreement concentrates on Aegis (κ = 0.68 and 0.61),
-whose source labels are noisier; Aegis cells are read with more caution. Details are in the paper.
+blind to the mapped gold, and re-labeled a 150-item balanced sample (25 from each of the six
+benchmarks that require cross-scheme harmonization; ToxiGen is excluded because it uses a direct human
+toxicity score rather than a source-label mapping). Both agree with the mapped gold (gpt-5.5 Cohen's
+κ = 0.89; Claude κ = 0.87) and agree with each other more strongly still (judge-vs-judge κ = 0.92).
+Disagreement concentrates on Aegis (κ = 0.68 and 0.61), whose mapped labels are recovered least
+consistently under our released policy; Aegis cells are read with more caution. Details are in the paper.
 
 ## Uses
 
@@ -109,6 +112,7 @@ obtained from the original source:
 | WildGuard | allenai/wildguardmix | ODC-BY (gated) |
 | Aegis | nvidia/Aegis-AI-Content-Safety-Dataset-2.0 | CC BY 4.0 |
 | ToxiChat | Baheti et al., 2021 | see source |
+| ToxiGen | microsoft/ToxiGen | Research-use agreement (gated) |
 
 ## Maintenance
 

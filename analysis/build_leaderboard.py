@@ -30,9 +30,9 @@ PAPER = os.path.dirname(OUT)
 # suffix; moderation datasets = moderation_ext, seed s0. 32B-ethics recovered from
 # the severity run (full solo block present).
 MODELS = ["Mistral-7B", "Llama-3.1-8B", "Qwen2.5-7B", "Qwen2.5-32B", "gemma-2-9b", "OLMo-2-7B"]
-DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat"]
+DATASETS = ["beavertails", "xstest", "ethics", "wildguard", "aegis", "toxicchat", "toxigen"]
 DATASET_DISP = {"beavertails": "BeaverTails", "xstest": "XSTest", "ethics": "Ethics",
-                "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat"}
+                "wildguard": "WildGuard", "aegis": "Aegis", "toxicchat": "ToxiChat", "toxigen": "ToxiGen"}
 
 def path_for(model, ds):
     frontier_alias = {"Mistral-7B": "Mistral-7B", "Llama-3.1-8B": "Llama-3.1-8B",

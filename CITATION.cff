@@ -17,9 +17,9 @@ identifiers:
     value: 10.5281/zenodo.21429763
     description: Concept DOI (resolves to the latest version)
 abstract: >-
-  Safety-Flag recasts six widely used safety benchmarks
-  (BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat)
-  into one balanced binary flag/do-not-flag protocol and
+  Safety-Flag recasts seven widely used safety benchmarks
+  (BeaverTails, XSTest, Ethics, WildGuard, Aegis, ToxiChat,
+  ToxiGen) into one balanced binary flag/do-not-flag protocol and
   releases a reliability and calibration leaderboard for ten
   open content moderators, scored on identical items with
   per-item confidence outputs. Only derived artifacts (item
@@ -33,5 +33,5 @@ keywords:
   - benchmark
   - trustworthy AI
 license: CC-BY-4.0
-version: 1.0.0
+version: 1.1.0
 date-released: '2026-07-26'
