@@ -35,3 +35,15 @@ keywords:
 license: CC-BY-4.0
 version: 1.1.0
 date-released: '2026-07-26'
+preferred-citation:
+  type: article
+  title: >-
+    Safety-Flag: A Unified Benchmark for the Reliability and
+    Calibration of LLM Content Moderators
+  authors:
+    - given-names: Yibo
+      family-names: Hu
+      affiliation: Illinois Institute of Technology
+  year: 2026
+  doi: 10.5281/zenodo.21906738
+  url: 'https://doi.org/10.5281/zenodo.21906738'

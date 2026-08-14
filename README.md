@@ -11,7 +11,9 @@ Beyond accuracy, Safety-Flag audits three separable reliability axes: **error
 direction** (over- vs. under-flagging), **probability calibration** (token-logprob
 and verbalized confidence), and **selective ranking** (coverage–risk abstention).
 
-This repository accompanies the paper *Safety-Flag: A Unified Benchmark for the Reliability and Calibration of LLM Content Moderators*.
+This repository accompanies the paper [*Safety-Flag: A Unified Benchmark for the
+Reliability and Calibration of LLM Content
+Moderators*](https://doi.org/10.5281/zenodo.21906738).
 
 ## What is (and is not) in this repository
 
@@ -92,7 +94,22 @@ data/results/
 
 ## Citation
 
-If you use Safety-Flag, please cite the paper (see `CITATION.cff`). The resource is archived on
-Zenodo under the concept DOI [10.5281/zenodo.21429763](https://doi.org/10.5281/zenodo.21429763),
+If you use Safety-Flag, please cite the paper:
+
+```bibtex
+@misc{hu2026safetyflag,
+  title        = {Safety-Flag: A Unified Benchmark for the Reliability and
+                  Calibration of {LLM} Content Moderators},
+  author       = {Hu, Yibo},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.21906738},
+  url          = {https://doi.org/10.5281/zenodo.21906738}
+}
+```
+
+If you use the released artifacts (per-item outputs, harmonized labels, analysis
+code), please also cite the resource itself (see `CITATION.cff`), archived on Zenodo
+under the concept DOI [10.5281/zenodo.21429763](https://doi.org/10.5281/zenodo.21429763),
 which always resolves to the latest version. See [`DATASHEET.md`](DATASHEET.md) for full dataset
 documentation (composition, collection, label validation, uses, distribution, maintenance).
