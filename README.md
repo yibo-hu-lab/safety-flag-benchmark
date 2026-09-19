@@ -13,7 +13,7 @@ and verbalized confidence), and **selective ranking** (coverage–risk abstentio
 
 This repository accompanies the paper [*Safety-Flag: A Unified Benchmark for the
 Reliability and Calibration of LLM Content
-Moderators*](https://doi.org/10.5281/zenodo.21906738).
+Moderators*](https://arxiv.org/abs/2609.19072).
 
 ## What is (and is not) in this repository
 
@@ -97,14 +97,12 @@ data/results/
 If you use Safety-Flag, please cite the paper:
 
 ```bibtex
-@misc{hu2026safetyflag,
+@article{hu2026safetyflag,
   title        = {Safety-Flag: A Unified Benchmark for the Reliability and
                   Calibration of {LLM} Content Moderators},
   author       = {Hu, Yibo},
-  year         = {2026},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21906738},
-  url          = {https://doi.org/10.5281/zenodo.21906738}
+  journal= {arXiv preprint arXiv:2609.19072},
+  year   = {2026},
 }
 ```
 
